@@ -18,5 +18,6 @@ export const StateProvider = ({ children }) => {
 };
 
 export const useStateContextApi = () => {
+  console.log(useContext(StateContext));
   return useContext(StateContext);
 };

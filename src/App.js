@@ -18,10 +18,11 @@ export default App;
 // function Counter({count, setCount}) {
 function Counter() {
   // const { count, setCount } = useContext(StateContext);
-  const { count, setCount } = useStateContextApi(); // returns useContext(StateContext)
+  const { count, setCount, user } = useStateContextApi(); // returns useContext(StateContext)
 
   return (
     <>
+      <h1>Name: {user}</h1>
       <h1>Counter: {count}</h1>
       <button onClick={() => setCount(count + 1)}>Increase</button>
     </>
