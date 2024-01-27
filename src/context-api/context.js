@@ -18,6 +18,12 @@ export const StateProvider = ({ children }) => {
 };
 
 export const useStateContextApi = () => {
-  console.log(useContext(StateContext));
   return useContext(StateContext);
 };
+// export const useStateContextApi = () => {
+//   return {
+//     name: "Alex",
+//     count: 0,
+//     setCount() {},
+//   };
+// };
