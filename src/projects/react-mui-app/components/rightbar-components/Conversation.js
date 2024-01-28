@@ -18,7 +18,7 @@ const Conversation = ({ name, primary, secondary, img, subText }) => {
         <ListItemText
           primary={primary}
           secondary={
-            <React.Fragment>
+            <>
               <Typography
                 sx={{ display: "inline" }}
                 component="span"
@@ -28,7 +28,7 @@ const Conversation = ({ name, primary, secondary, img, subText }) => {
                 {secondary}
               </Typography>
               {subText}
-            </React.Fragment>
+            </>
           }
         />
       </ListItem>

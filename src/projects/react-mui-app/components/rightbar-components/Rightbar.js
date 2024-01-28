@@ -10,10 +10,10 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { users } from "../data/users";
-import { images } from "../data/images";
-import Conversation from "./rightbar-components/Conversation";
-import convos from "../data/convos";
+import { users } from "../../data/users";
+import { images } from "../../data/images";
+import Conversation from "./Conversation";
+import convos from "../../data/convos";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {

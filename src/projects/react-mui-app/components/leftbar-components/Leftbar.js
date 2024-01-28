@@ -1,7 +1,7 @@
 import { Box, List } from "@mui/material";
 import React from "react";
-import LeftMenuItem from "./leftbar-components/LeftMenuItem";
-import leftMenuItemNames from "../data/menu_items";
+import LeftMenuItem from "./LeftMenuItem";
+import leftMenuItemNames from "../../data/menu_items";
 
 const Sidebar = ({ mode, setMode }) => {
   return (
