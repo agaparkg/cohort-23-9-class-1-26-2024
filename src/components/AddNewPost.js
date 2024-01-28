@@ -54,28 +54,41 @@ const AddNewPost = () => {
     gap: "10px",
     marginBottom: "20px",
     padding: 5,
-    // backgroundColor: "red",
   });
 
   return (
     <>
-      <Tooltip
-        onClick={toggle}
+      <Box
         sx={{
           position: "fixed",
           bottom: 20,
           left: {
-            xs: "calc(50%)",
+            xs: "47%",
             md: 30,
           },
         }}
-        title="Delete"
       >
-        <Fab color="primary" aria-label="add">
-          {/* <Add /> */}
-          <AddIcon />
-        </Fab>
-      </Tooltip>
+        <Tooltip onClick={toggle} title="Delete">
+          <Fab color="primary" aria-label="add">
+            {/* <Add /> */}
+            <AddIcon />
+          </Fab>
+        </Tooltip>
+        <Typography
+          sx={{
+            display: {
+              xs: "none",
+              sm: "none",
+              md: "inline-block",
+            },
+          }}
+          ml={2}
+          fontWeight={500}
+          variant="span"
+        >
+          New Post
+        </Typography>
+      </Box>
       <StyledModal
         open={open}
         onClose={toggle}

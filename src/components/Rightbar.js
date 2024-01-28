@@ -81,9 +81,9 @@ const Rightbar = () => {
           Latest Photos
         </Typography>
         <ImageList cols={3} rowHeight={100} gap={3}>
-          {images.map((image) => {
+          {images.map((image, index) => {
             return (
-              <ImageListItem>
+              <ImageListItem key={index}>
                 <img src={image.img} alt="" />
               </ImageListItem>
             );

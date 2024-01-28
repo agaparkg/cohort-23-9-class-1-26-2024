@@ -20,18 +20,8 @@ import {
 } from "@mui/icons-material";
 
 const Sidebar = ({ mode, setMode }) => {
-  //   return <Box sx={{ backgroundColor: "skyblue" }}>Sidebar</Box>;
-  //   return <Box bgcolor="skyblue">Sidebar</Box>;
-  //   return (
-  //     <Box bgcolor="skyblue" width="20%">
-  //       Sidebar
-  //     </Box>
-  //   );
   return (
     <Box
-      //   bgcolor="skyblue"
-      //   position="fixed" --> This doesn't work because this will act as
-      //   position absolute. Solution: create another Box inside current Box
       flex={1}
       p={2}
       sx={{
