@@ -3,14 +3,14 @@ import { createContext, useContext, useState } from "react";
 export const StateContext = createContext();
 
 export const StateProvider = ({ children }) => {
-  const [user, setUser] = useState("John");
+  const [name, setName] = useState("John");
   const [count, setCount] = useState(0);
 
   const value = {
-    user,
+    name,
     count,
     setCount,
-    setUser,
+    setName,
   };
   return (
     <StateContext.Provider value={value}>{children}</StateContext.Provider>
