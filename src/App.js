@@ -9,25 +9,21 @@ import AddNewPost from "./components/AddNewPost";
 import { useState } from "react";
 
 function App() {
-  // const [mode, setMode] = useState("dark");
   const [mode, setMode] = useState("light");
+  // const [mode, setMode] = useState("dark");
+
   // Toggling Dark theme mode to Light theme mode
   const darkTheme = createTheme({
     palette: {
       mode: mode,
     },
   });
-  // const styles = { backgroundColor: "skyblue", color: "white" };
 
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <Navbar />
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          // bgcolor="grey"
-        >
+        <Stack direction="row" justifyContent="space-between">
           <Leftbar mode={mode} setMode={setMode} />
           <Feed />
           <Rightbar />
