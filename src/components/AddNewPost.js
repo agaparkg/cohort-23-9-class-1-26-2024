@@ -63,7 +63,7 @@ const AddNewPost = () => {
           position: "fixed",
           bottom: 20,
           left: {
-            xs: "47%",
+            xs: "46%",
             md: 30,
           },
         }}

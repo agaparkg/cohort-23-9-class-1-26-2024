@@ -70,7 +70,7 @@ const Rightbar = () => {
                 anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
                 variant="dot"
               >
-                <Avatar alt={user.alt} src={index !== 3 ? user.src : ""} />
+                <Avatar alt={user.alt} src={user.src} />
               </StyledBadge>
             );
           })}
